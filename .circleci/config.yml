@@ -1,0 +1,18 @@
+variables:
+  sbVer: &sb-ver "0.25.0"
+
+version: 2.1
+
+orbs:
+  sb: hubci/strawberry@0.8
+
+workflows:
+  build-n-test-wf:
+    jobs:
+      - sb/build:
+          version: *sb-ver
+          source: "src"
+          html-proofer: false
+          filters:
+            branches:
+              ignore: trunk

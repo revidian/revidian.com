@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------------------
+ * Colors
+ *---------------------------------------------------------------------------*/
+:root{
+	--revidian-black:	#26253B;
+	--grey:				#D9D9D9;
+	--light-grey:		#E8E8E8;
+
+	--sb-blue:		#57C7DC;
+	--sb-pink:		#F37784;
+	--sb-green:		#E6F3E9;
+
+	--eventhunt-blue:				#74C0FC;
+	--eventhunt-green:			#2A966F;
+	--eventhunt-light-green:	#E9F4F0;
+	--eventhunt-purple:			#8F89FA;
+	--eventhunt-red:				#F84F39;
+
+	--melitix-green:	#4D9686;
+	--almost-white:	#F5F5F5;
+	--almost-black:	#3E3D42;
+
+	--primary-color: var( --revidian-black );
+	--on-primary-color: white;
+	--secondary-color: var( --sb-pink );
+	--on-secondary-color: white;
+	--tertiary-color: var( --sb-green );
+	--on-tertiary-color: white;
+
+	--background-color: var( --grey );
+	--heading-color: var( --primary-color );
+}

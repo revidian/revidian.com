@@ -1,0 +1,74 @@
+form.design-a{
+	margin: 0 auto;
+	width: 70%;
+
+	input,
+	select,
+	textarea{
+		display: block;
+		margin-bottom: 10px;
+		border-radius: 5px;
+		padding: 8px 0;
+		width: 100%;
+	}
+
+	/* one-line rectangle inputs */
+	input,
+	select{
+		padding-left: 10px;
+		height: 40px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea{
+		border: none;
+
+		&:hover{
+			border: 1px solid #ABB0B2;
+		}
+	}
+}
+
+.card{
+	display: inline-block;
+	margin: 0 20px 30px 0;
+	border-radius: 10px;
+	background-color: white;
+	padding: 8px;
+	width: 300px;
+
+	&.intro{
+		padding: 0;
+
+		header{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			height: 120px;
+			font-size: 2.8rem;
+		}
+
+		footer{
+			padding: 20px;
+
+			h4{
+				margin: 0;
+			}
+		}
+	}
+}
+
+.card.intro.organize header{
+	background-color: var( --eventhunt-blue );
+}
+
+.card.intro.attend header{
+	background-color: var( --eventhunt-red );
+}
+
+.card.intro.open-source header{
+	background-color: var( --eventhunt-green );
+}

@@ -1,0 +1,19 @@
+baseurl: "https://revidian.com/"
+title: "Revidian Enterprises"
+theme: revidian-2024
+
+googleAnalytics: "G-S1G6M0J460"
+
+enableEmoji: true
+
+params:
+  description: ""
+  tagline: "Building innovative products and companies with technology & ingenuity."
+  mailchimpURL: ""
+
+jsonFeedLimit: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

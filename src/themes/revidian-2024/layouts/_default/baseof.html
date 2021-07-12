@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	{{ hugo.Generator }}
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+	{{ partial "stylesheets" . -}}
+	{{ partial "js-head" . -}}
+	{{ if eq (getenv "HUGO_ENV") "production" }}
+		{{ template "_internal/google_analytics.html" . }}
+	{{ end }}
+	<link rel="icon" type="image/png" href="{{ "favicon.png" | absURL }}">
+	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+	{{ if .Description }}
+		<meta name="description" content="{{ .Description }}">
+	{{ else if .IsHome }}
+		<meta name="description" content="{{ .Site.Params.Description }}">
+	{{ else }}
+		<meta name="description" content="{{ .Summary | plainify }}">
+	{{ end }}
+</head>
+<body class="{{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }} type-{{ .Type }} {{ with .Layout }}layout-{{ . }}{{ end }}">
+	{{ partial "header" . -}}
+	<main class="page-padding">
+		{{ block "main" . }}{{ end }}
+	</main>
+	{{ partial "footer" . }}
+	{{ partial "js-footer" . }}
+</body>
+</html>

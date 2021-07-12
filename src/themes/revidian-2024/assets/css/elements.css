@@ -1,0 +1,35 @@
+.btn{
+	border-radius: 5px;
+	padding: 10px 12px;
+	text-decoration: none;
+	font-size: 1.6rem;
+	font-weight: bold;
+	cursor: pointer;
+
+	> .svg-inline--fa{
+		margin-right: 0.4em;
+	}
+
+	&.primary{
+		background-color: var( --primary-color );
+		color: var( --on-primary-color );
+
+		&:hover{
+			background-color: green;
+		}
+	}
+
+   &.alt{
+     border: 1px solid white;
+	  color: white;
+
+		&:hover{
+     		border-color: #32363B;
+			background-color: #32363B;
+		}
+   }
+
+	&.github{
+		background-color: #1f2328;
+	}
+}

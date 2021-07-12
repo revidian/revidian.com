@@ -1,0 +1,19 @@
+#intro{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 14%;
+	text-align: center;
+
+	h1{
+		margin: 0;
+	}
+
+	p{
+		margin: 10px 0 15px;
+		max-width: 800px;
+		color: #8E8DA0;
+		font-size: 2.7rem;
+		line-height: 110%;
+	}
+}
