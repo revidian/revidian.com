@@ -7,9 +7,8 @@ googleAnalytics: "G-S1G6M0J460"
 enableEmoji: true
 
 params:
-  description: ""
+  description: "Building innovative products and companies with technology & ingenuity."
   tagline: "Building innovative products and companies with technology & ingenuity."
-  mailchimpURL: ""
 
 jsonFeedLimit: 10
 
